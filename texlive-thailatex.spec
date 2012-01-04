@@ -6,7 +6,7 @@
 # catalog-version 0.4.5
 Name:		texlive-thailatex
 Version:	0.4.5
-Release:	1
+Release:	2
 Summary:	Typeset Thai texts with standard LaTeX classes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/thai/thailatex
