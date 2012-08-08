@@ -1,11 +1,11 @@
-# revision 25416
+# revision 27050
 # category Package
 # catalog-ctan /language/thai/thailatex
-# catalog-date 2012-02-16 15:40:44 +0100
+# catalog-date 2012-06-16 13:25:22 +0200
 # catalog-license lppl
-# catalog-version 0.4.7
+# catalog-version 0.5.0
 Name:		texlive-thailatex
-Version:	0.4.7
+Version:	0.5.0
 Release:	1
 Summary:	Typeset Thai texts with standard LaTeX classes
 Group:		Publishing
@@ -34,6 +34,9 @@ used as such after a (small) patch to babel itself.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/generic/thailatex/hyph-th-utf8.tex
+%{_texmfdistdir}/tex/generic/thailatex/hyph-th.tex
+%{_texmfdistdir}/tex/generic/thailatex/loadhyph-th.tex
 %{_texmfdistdir}/tex/generic/thailatex/lthenc.def
 %{_texmfdistdir}/tex/generic/thailatex/thai.ldf
 %{_texmfdistdir}/tex/generic/thailatex/thswitch.sty
@@ -52,6 +55,7 @@ used as such after a (small) patch to babel itself.
 %doc %{_texmfdistdir}/source/latex/thailatex/Makefile.in
 %doc %{_texmfdistdir}/source/latex/thailatex/NEWS
 %doc %{_texmfdistdir}/source/latex/thailatex/README
+%doc %{_texmfdistdir}/source/latex/thailatex/README.hyphen
 %doc %{_texmfdistdir}/source/latex/thailatex/TODO
 %doc %{_texmfdistdir}/source/latex/thailatex/aclocal.m4
 %doc %{_texmfdistdir}/source/latex/thailatex/babel/Makefile.am
@@ -70,6 +74,31 @@ used as such after a (small) patch to babel itself.
 %doc %{_texmfdistdir}/source/latex/thailatex/emacs/Makefile.am
 %doc %{_texmfdistdir}/source/latex/thailatex/emacs/Makefile.in
 %doc %{_texmfdistdir}/source/latex/thailatex/emacs/thai-latex-setup.el
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/Makefile.am
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/Makefile.in
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/README
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/conv-utf8-hex.sed
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/diff-dicts.sh
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/hyph-th-utf8.tex.in
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/hyph-th.tex.in
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/loadhyph-th.tex
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-city.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-collection.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-common.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-country.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-district.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-geo.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-history.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-ict.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-lang-ethnic.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-proper.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-science.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-spell.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-std-compound.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/tdict-std.txt
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/test-hyphen.sh
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/thai-exc.pat
+%doc %{_texmfdistdir}/source/latex/thailatex/hyphen/thai.tra
 %doc %{_texmfdistdir}/source/latex/thailatex/install-sh
 %doc %{_texmfdistdir}/source/latex/thailatex/missing
 %doc %{_texmfdistdir}/source/latex/thailatex/scripts/Makefile.am
