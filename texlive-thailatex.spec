@@ -116,3 +116,24 @@ used as such after a (small) patch to babel itself.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.5.0-1
++ Revision: 812922
+- Update to latest release.
+
+* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4.7-1
++ Revision: 779703
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4.5-2
++ Revision: 756828
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.4.5-1
++ Revision: 719725
+- texlive-thailatex
+- texlive-thailatex
+- texlive-thailatex
+
